@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+  <title></title>
+</head>
+<body>
+    
+    <header class="page-header">
+        <h1>Social Media Form</h1>
+    </header>
+  <div class="container">
+    <h2>Social Media Form</h2>
+    <form id="socialMediaForm" action="http://127.0.0.1:5000/submit" method="post">
+      <label for="twitter">Twitter Handle:</label>
+      <input type="text" id="twitter" name="twitter" placeholder="Enter Twitter Handle">
+
+      <label for="linkedin">LinkedIn:</label>
+      <input type="text" id="linkedin" name="linkedin" placeholder="Link to LinkedIn Profile">
+
+      <label for="MBTI">MBTI Indicator:</label>
+      <input type="text" id="MBTI" name="MBTI" placeholder="Enter MBTI Indicator">
+
+      <button type="button" id="submitButton" onclick="submitForm()">Submit</button>
+    </form>
+
+    <div class="con1">
+      <p id="promptDisplay"></p>
+    <div>
+  </div>
+
+
+
+</body>
+</html>
